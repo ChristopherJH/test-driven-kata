@@ -10,6 +10,9 @@ function whoLikesIt(people: string[]): string {
   else if (people.length === 1) {
     return `${people[0]} likes this`;
   }
+  else if (people.length === 2) {
+    return `${people[0]} and ${people[1]} likes this`;
+  }
   return 'wrong';
 }
 
