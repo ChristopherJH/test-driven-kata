@@ -11,3 +11,7 @@ test("One person test:", () => {
 test("Two person test:", () => {
   expect(whoLikesIt(['Josh', 'Chris'])).toBe("Josh and Chris likes this");
 });
+
+test("Three person test:", () => {
+  expect(whoLikesIt(['Josh', 'Chris', 'Tim'])).toBe("Josh, Chris and Tim likes this");
+});
