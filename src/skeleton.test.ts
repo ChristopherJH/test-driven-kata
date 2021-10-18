@@ -1,5 +1,5 @@
-import sum from "./skeleton";
+import whoLikesIt from "./skeleton";
 
-test("sum adds two numbers", () => {
-  expect(sum(4, 3)).toBe(7);
+test("Final message:", () => {
+  expect(whoLikesIt([])).toBe("no one likes this");
 });

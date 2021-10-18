@@ -1,11 +1,13 @@
 /**
- * Adds together two numbers
- * @param a - the first number to add
- * @param b - the second number to add
- * @returns the total
+ * Tells the user who has liked their post based on an array of names.
+ * @param people - array of names
+ * @returns final message
  */
-function sum(a: number, b: number): number {
-  return a + b;
+function whoLikesIt(people: string[]): string {
+  if (people.length === 0) {
+    return "no one likes this";
+  }
+  return 'wrong';
 }
 
-export default sum;
+export default whoLikesIt;
