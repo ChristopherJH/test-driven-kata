@@ -7,6 +7,9 @@ function whoLikesIt(people: string[]): string {
   if (people.length === 0) {
     return "no one likes this";
   }
+  else if (people.length === 1) {
+    return `${people[0]} likes this`;
+  }
   return 'wrong';
 }
 
