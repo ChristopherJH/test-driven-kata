@@ -11,10 +11,13 @@ function whoLikesIt(people: string[]): string {
     return `${people[0]} likes this`;
   }
   else if (people.length === 2) {
-    return `${people[0]} and ${people[1]} likes this`;
+    return `${people[0]} and ${people[1]} like this`;
   }
   else if (people.length === 3) {
-    return `${people[0]}, ${people[1]} and ${people[2]} likes this`;
+    return `${people[0]}, ${people[1]} and ${people[2]} like this`;
+  }
+  else {
+    return `${people[0]}, ${people[1]} and ${people.length-2} others like this`;
   }
   return 'wrong';
 }
